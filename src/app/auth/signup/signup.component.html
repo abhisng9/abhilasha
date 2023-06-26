@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <h1 class="text-center">SignUp Form</h1>
+    <form [formGroup]="signupForm"  class="form">    
+           
+        <div>          
+              <mat-label>Name</mat-label>
+              <mat-form-field class="w-100" appearance="outline">
+                <input  matInput [formControl]="name" placeholder="Enter your name">    
+              </mat-form-field>          
+        </div>    
+        <div>         
+              <mat-label>Email</mat-label>
+              <mat-form-field class="w-100" appearance="outline">
+                <input  matInput [formControl]="email" placeholder="Enter your email">       
+              </mat-form-field>          
+        </div>
+        <div>         
+              <mat-label>Password</mat-label>
+              <mat-form-field class="w-100 remove-padding" appearance="outline">
+                  <input  type="password" matInput placeholder="Enter your password"  [formControl]="password">
+              <mat-error>Password is required</mat-error>
+              </mat-form-field>
+        </div>
+      <!-- <div class="signup-btn">
+        <button class="btn btn-primary w-100" type="submit">Sign Up</button>
+      </div> -->
+      <div>
+        <button type="submit" class="mat-button w-100 mat-button-primary mt-4">Sign Up</button>
+    </div>
+    </form>
+    <p class="text-center">Already registered candidate? <a routerLink="../login">click here</a></p>
+</div>
+    
+      
+      
+      
+      
+      
+      
+
+    
+

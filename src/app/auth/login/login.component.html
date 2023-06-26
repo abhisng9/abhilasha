@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <h1 class="text-center">Login Form</h1>
+    <form  class="form">    
+           
+       
+        <div>         
+              <mat-label>Email</mat-label>
+              <mat-form-field class="w-100" appearance="outline">
+                <input  matInput  placeholder="Enter your email">       
+              </mat-form-field>          
+        </div>
+        <div>         
+              <mat-label>Password</mat-label>
+              <mat-form-field class="w-100 remove-padding" appearance="outline">
+                  <input  type="password" matInput placeholder="Enter your password"  >
+              <!-- <mat-error *ngIf="signupForm.get('password')?.errors?.['required']">Password is required</mat-error> -->
+              </mat-form-field>          
+        </div>
+        <div>
+            <button type="submit" class="mat-button w-100 mat-button-primary mt-4">Login</button>
+        </div>
+        </form>
+    <p class="text-center">don't have account?<a routerLink="../signup">click here</a></p>
+
+</div>
